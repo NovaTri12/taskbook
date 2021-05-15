@@ -6,7 +6,7 @@ class Home extends Controller
     public function index()
     {
         $data['title'] = 'Task Book';
-        $data['tasks'] = $this->model('Tasks_Model')->getTasks();
+        $data['tasks'] = $this->model('Tasks_model')->getTasks();
         $this->view('templates/header', $data);
         $this->view('templates/navbar');
         $this->view('home/index', $data);
@@ -16,7 +16,7 @@ class Home extends Controller
     public function detail($id)
     {
         $data['title'] = 'Detail Task Book';
-        $data['tasks'] = $this->model('Tasks_Model')->getTaskByID($id);
+        $data['tasks'] = $this->model('Tasks_model')->getTaskByID($id);
         $this->view('templates/header', $data);
         $this->view('templates/navbar');
         $this->view('home/detail', $data);

@@ -1,7 +1,7 @@
 <?php
 
 
-class Tasks_Model
+class Tasks_model
 {
 
     private $table = 'tasks';
